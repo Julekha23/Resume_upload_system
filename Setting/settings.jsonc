@@ -1,0 +1,18 @@
+{
+  "server_port": 8081,
+  "use_env": "development",
+
+  "mongo_url": "mongodb://mongo:27017",
+  "resume_db": "resume",
+  "reviewer_db":"reviewer",
+
+  "worker_count": 5,
+  "job_queue_buffer_size": 100,
+  "job_retry_max": 3,
+
+  "max_resume_size_mb": 100,
+  "resume_storage_path": "./storage/resumes",
+
+  "ticket_assign_timeout_min": 30,
+  "max_active_reviews": 10
+}
