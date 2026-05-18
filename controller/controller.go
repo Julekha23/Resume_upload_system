@@ -8,11 +8,9 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	// "github.com/twitchyliquid64/golang-asm/obj"
-	//"github.com/twitchyliquid64/golang-asm/obj"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
-	// "go.mongodb.org/mongo-driver/mongo"
+
 )
 
 func Start(c *gin.Context) {
