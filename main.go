@@ -6,7 +6,6 @@ import (
 	setup "First_Project/set_up"
 	"First_Project/upload"
 	"fmt"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -27,8 +26,6 @@ func main() {
 	r.GET("/resume/:id",controller.GetByID)
 	r.DELETE("/resume/:id",controller.DeleteByID)
 	r.GET("/resume/:id/file",controller.DownloadFile)
-	// r.PATCH("/resume/:id/status",controller.UpdateStatus)
-	// r.PATCH("/resume/:id/assign",controller.AssignReviewer)
 	r.PATCH("/resume/:id/status",controller.UpdateStatusAndFreeReviewer)
 	r.PATCH("/resume/:id/assign",controller.AssignReviewer)
 	r.POST("/reviewer",controller.AddReviewer)
