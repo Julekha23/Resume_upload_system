@@ -1,5 +1,6 @@
 services:
   api:
+<<<<<<< HEAD
     build: .
     container_name: first_project_api
     ports:
@@ -8,6 +9,19 @@ services:
       - mongo
     environment:
       - MONGO_URL=mongodb://mongo:27017
+=======
+    build: .  # build image using Dockerfile in current folder
+    container_name: first_project_api 
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongo    # start mongo container FIRST, then start api
+    environment:
+      - MONGO_URL=mongodb://mongo:27017
+    restart: on-failure
+    volumes:                                                        
+      - ./storage/resumes:/First_Project/storage/resumes           
+>>>>>>> a1f77ceab5fe9317d46f796ad157c7ae4e4b40e1
 
   mongo:
     image: mongo:7

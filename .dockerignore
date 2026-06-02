@@ -1,4 +1,8 @@
 storage
 .git
 main.exe
+<<<<<<< HEAD
 tmp
+=======
+tmp
+>>>>>>> a1f77ceab5fe9317d46f796ad157c7ae4e4b40e1
